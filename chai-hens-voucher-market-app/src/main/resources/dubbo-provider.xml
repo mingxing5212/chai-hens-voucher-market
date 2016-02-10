@@ -22,6 +22,7 @@
 
     <dubbo:application name="voucher-provider" owner="mingxingli" organization="mingxing5212"/>
     <dubbo:registry address="zookeeper://192.168.99.100:32772"/>
+    <dubbo:protocol host="192.168.0.104"/>
 	<dubbo:service interface="me.mingxing5212.chaihens.voucher.market.api.IVoucherPutOnService" ref="voucherDefinitionService"  protocol="dubbo"/>
     <bean id="voucherDefinitionService" class="me.mingxing5212.chaihens.voucher.market.service.impl.VoucherPutOnServiceImpl" />
 </beans>
